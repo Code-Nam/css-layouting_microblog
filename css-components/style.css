@@ -1,4 +1,6 @@
 @import url(navbar.css);
+@import url(main.css);
+@import url(aside.css);
 
 *{
   padding: 0;
@@ -9,4 +11,18 @@
 
 a{
   text-decoration: none;
+}
+
+section{
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+}
+
+@media screen and (max-width: 430px) {
+  section{
+    grid-template-columns: 1fr;
+  }
+  section > main {
+    order: 2;
+  }
 }

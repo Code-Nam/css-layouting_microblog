@@ -3,12 +3,28 @@ nav{
   justify-content: space-evenly;
   align-items: center;
   padding: 10px;
+  z-index: 1;
+}
+
+#mobile-menu{
+  display: none;
+  position: fixed;
+  left: 0;
+  top: 0;
+  height: 2rem;
+  width: 2rem;
+  z-index: 4;
+  margin: 5px;
+  border-radius: 75%;
+  border: 1px solid #7aa3cc;
+  background-color: #0d3170;
+}
+
+#mobile-menu svg{
+  width: 100%;
 }
 
 #logo{
-  position: absolute;
-  left: 50%;
-  transform: translateX(-50%);
   max-width: 50px;
 }
 
@@ -22,13 +38,19 @@ nav{
 
 @media screen and (max-width: 430px) {
   nav{
-    flex-wrap: wrap;
-    position: absolute;
-    top: 10%;
-    left: 50%;
-    transform: translateX(-50%);
-  }
-  .menu{
     flex-direction: column;
+    position: absolute;
+    width: 70%;
+    height: 100%;
+    transform: translateX(-100%);
+    transition: all 0.5s ease-in-out;
+  }
+
+  nav > .menu{
+    flex-direction: column;
+  }
+  
+  #mobile-menu{
+    display: block;
   }
 }

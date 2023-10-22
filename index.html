@@ -7,8 +7,17 @@
   <link rel="stylesheet" href="css-components/style.css">
 </head>
 <body>
-  <img id="logo" src="img/guinea-pig.png" alt="guinea-pig_logo">
+
+  <button id="mobile-menu" onclick="display(event)">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="White" stroke-width="2">
+        <line x1="3" y1="12" x2="21" y2="12"></line>
+        <line x1="3" y1="6" x2="21" y2="6"></line>
+        <line x1="3" y1="18" x2="21" y2="18"></line>
+    </svg>
+  </button>
+
   <nav>
+    <img id="logo" src="img/guinea-pig.png" alt="guinea-pig_logo">
     <div class="menu">
       <a href="#">Accueil</a>
       <a href="#">Actualité</a>
@@ -21,13 +30,31 @@
     </div>
   </nav>
 
+  <section>
 
-  <main>
+    <main>
+  
+      <article class="tweet">
+        <header>
+          <img src="" alt="">
+          <div>
+            <h3></h3>
+            <p></p>
+          </div>
+        </header>
+      </article>
+  
+    </main>
 
-  </main>
-  <aside>
+    <aside>
+      <h2></h2>
+      <h2></h2>
+      <h2></h2>
+      <h2></h2>
+      <h2></h2>
+    </aside>
 
-  </aside>
+  </section>
 
   <script src="script.js"></script>
 </body>

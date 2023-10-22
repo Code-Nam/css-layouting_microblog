@@ -1,0 +1,10 @@
+main{
+  height: 300px;
+  background-color: red;
+  display: grid;
+  grid-template-columns: repeat(1fr, 2);
+}
+
+main > :nth-child(3n){
+  grid-column: 1 / -1;
+}
