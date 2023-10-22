@@ -1,10 +1,60 @@
 main{
-  height: 300px;
-  background-color: red;
   display: grid;
-  grid-template-columns: repeat(1fr, 2);
+  grid-template-columns: 1fr;
+
 }
 
-main > :nth-child(3n){
-  grid-column: 1 / -1;
+.tweet{
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  container-type: inline-size;
+  container-name: tweet;
+  background-color: var(--main-color);
+  border-radius: 10px;
+  margin: 5px;
+  padding: 15px;
+  color: var(--sec-color);
+}
+
+.tweet h3{
+  font-size: smaller;
+}
+
+.tweet h4{
+  font-style: italic;
+  font-size: small;
+  color: var(--sec-text-color);
+}
+
+.tweet header{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+@container tweet (min-width: 550px){
+  .tweet header{
+    flex-direction: column;
+  }
+}
+
+.tweet img{
+  width: 75px;
+  border-radius: 50%;
+}
+
+.tweet p{
+  text-align: center;
+}
+
+@media screen and (min-width: 430px){
+  main{
+    grid-template-columns: repeat(2, 1fr);
+  }
+  
+  main > :nth-child(3n){
+    grid-column: 1 / -1;
+    flex-direction: column;
+  }
 }

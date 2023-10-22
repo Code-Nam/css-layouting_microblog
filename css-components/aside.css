@@ -1,20 +1,20 @@
 aside{
-  margin: 1em;
+  margin-inline: 1em;
+  margin-top: 5px;
   padding: 1em;
   max-height: 300px;
   position: sticky;
-  top: 70px;
+  top: 75px;
   background-color: var(--sec-color);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   justify-content: space-between;
-  color: var(--text-color);
+  color: var(--main-text-color);
 }
 
 aside > h2{
-  border-bottom: 1px solid var(--text-color);
-  width: 100%;
+  border-bottom: 1px solid var(--main-color);
   text-align: center;
 }
 
@@ -26,5 +26,6 @@ aside > a:hover{
 @media screen and (max-width: 430px){
   aside{
     position: static;
+    margin-inline: 5px;
   }
 }

@@ -12,7 +12,7 @@
 }
 
 body{
-  background-color: #dbcab6;
+  background-color: var(--ter-color);
 }
 
 body::-webkit-scrollbar{
@@ -33,12 +33,13 @@ a{
 section{
   display: grid;
   grid-template-columns: 2fr 1fr;
-  height: 5000vh;
+  margin-top: 75px;
 }
 
 @media screen and (max-width: 430px) {
   section{
     grid-template-columns: 1fr;
+    margin-top: 0;
   }
   section > main {
     order: 2;
@@ -48,5 +49,7 @@ section{
 :root{
   --main-color: #ff8c46;
   --sec-color: #FFF;
-  --text-color: #ff8c46;
+  --ter-color: #dbcab6;
+  --main-text-color: #ff8c46;
+  --sec-text-color: #6c6868;
 }

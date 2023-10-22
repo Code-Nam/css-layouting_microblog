@@ -6,8 +6,10 @@ nav{
   align-items: center;
   padding: 10px;
   z-index: 1;
-  position: sticky;
-  top: 1px;
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: var(--sec-color);
 }
 
 #mobile-menu{
@@ -43,7 +45,6 @@ nav{
 @media screen and (max-width: 430px) {
   nav{
     flex-direction: column;
-    position: absolute;
     width: 70%;
     height: 90%;
     transform: translateX(-100%);
