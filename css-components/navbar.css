@@ -10,6 +10,7 @@ nav{
   width: 100%;
   top: 0;
   background-color: var(--sec-color);
+  transform: translateX(0%);
 }
 
 #mobile-menu{

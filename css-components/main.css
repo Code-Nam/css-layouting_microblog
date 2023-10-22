@@ -1,7 +1,6 @@
 main{
   display: grid;
   grid-template-columns: 1fr;
-
 }
 
 .tweet{
@@ -31,6 +30,7 @@ main{
   display: flex;
   align-items: center;
   justify-content: center;
+  gap: 15px;
 }
 
 @container tweet (min-width: 550px){
