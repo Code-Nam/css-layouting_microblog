@@ -1,0 +1,29 @@
+#menu{
+  color: var(--text-color);
+}
+
+#login > a{
+  padding: 10px;
+  border-radius: 20px;
+  font-size: smaller;
+}
+
+#login > :nth-child(1){
+  background-color: var(--main-color);
+  border: 3px solid var(--main-color);
+  color: var(--sec-color);
+}
+
+#login > :nth-child(1):hover{
+  border: 3px solid var(--sec-color);
+}
+
+#login > :nth-child(2){
+  background-color: var(--sec-color);
+  border: 3px solid var(--sec-color);
+  color: var(--text-color);
+}
+
+#login > :nth-child(2):hover{
+  border: 3px solid var(--main-color);
+}

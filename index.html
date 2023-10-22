@@ -5,28 +5,31 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Layouting Microblog</title>
   <link rel="stylesheet" href="css-components/style.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Gothic+A1&display=swap" rel="stylesheet">
 </head>
 <body>
 
   <button id="mobile-menu" onclick="display(event)">
     <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" stroke="White" stroke-width="2">
-        <line x1="3" y1="12" x2="21" y2="12"></line>
-        <line x1="3" y1="6" x2="21" y2="6"></line>
-        <line x1="3" y1="18" x2="21" y2="18"></line>
+        <line x1="3" y1="12" x2="13" y2="12"></line>
+        <line x1="3" y1="6" x2="20" y2="6"></line>
+        <line x1="3" y1="18" x2="17" y2="18"></line>
     </svg>
   </button>
 
   <nav>
-    <img id="logo" src="img/guinea-pig.png" alt="guinea-pig_logo">
-    <div class="menu">
-      <a href="#">Accueil</a>
-      <a href="#">Actualité</a>
-      <a href="#">Paramètres</a>
-      <a href="#">Aide</a>
+    <div id="menu" class="nav-items">
+      <p>Accueil</p>
+      <p>Actualité</p>
+      <p>Paramètres</p>
+      <p>Aide</p>
     </div>
-    <div class="menu">
-      <a href="#"><button>Inscription</button></a>
-      <a href="#"><button>Connexion</button></a>
+    <img id="logo" src="img/guinea-pig.png" alt="guinea-pig_logo">
+    <div id="login" class="nav-items">
+      <a href="#">Inscription</a>
+      <a href="#">Connexion</a>
     </div>
   </nav>
 
@@ -47,11 +50,12 @@
     </main>
 
     <aside>
-      <h2></h2>
-      <h2></h2>
-      <h2></h2>
-      <h2></h2>
-      <h2></h2>
+      <h2>Trending</h2>
+      <a>#AnimauxDeCompagnie</a>
+      <a>#Hamster</a>
+      <a>#RatsDomestiques</a>
+      <a>#CochonsD'Inde</a>
+      <a>#RongueursMignons</a>
     </aside>
 
   </section>
